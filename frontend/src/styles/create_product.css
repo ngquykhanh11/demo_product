@@ -1,0 +1,136 @@
+
+
+@media screen and (min-width: 1024px) { /*For laptop user*/
+   
+    #page-container {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    
+    #create-product-page {
+        max-width: 800px;
+        width: 90%;
+        padding: 50px 20px;
+        box-sizing: border-box;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    
+    #heading-container {
+        font-family: "Abril Fatface", sans-serif;
+        font-size: 2.5em;
+        text-align: center;
+        color: #044b4d;
+        background-color: #f8f4eb;
+        padding: 15px 40px;
+        border-radius: 50px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    
+    #create-product-form {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 170px;
+        background-color: #f8f4eb8e;
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+        max-width: 500px;
+        text-align: left;
+    }
+
+    
+    .common-input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin: 5px;
+    }
+
+    
+    #create-product-button {
+        color: black;
+        background-color: #f0f2ab;
+        border-radius: 10px;
+        border: olive;
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1023px) {
+    #heading-container {
+        font-family: "Abril Fatface", sans-serif;
+        text-align: center;
+        color: #044b4d;
+        background-color: #f8f4eb;
+        padding-top: 100px;
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%; 
+        transform: translateY(-50%);
+        box-sizing: border-box;
+    }
+
+     #page-container {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    #create-product-form {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 170px;
+        background-color: #f8f4eb8e;
+        border-radius: 10px;
+        margin-left: 50%;
+        width: 100%;
+        max-width: 500px;
+        text-align: left;
+    }
+
+
+}
+
+
+
+
+
+
+
+

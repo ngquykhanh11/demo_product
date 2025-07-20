@@ -1,0 +1,138 @@
+@media screen and (min-width: 1024px) { /*For laptop user*/
+  #home-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+
+
+  /*I added something bc it's cute :3*/
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  #header {
+    font-family: "Abril Fatface", sans-serif;
+    position: absolute;
+    top: 55%;
+    left: 56%;
+    font-size: 3em;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #044b4d;
+    z-index: 2;
+    white-space: nowrap;
+    background-color: #f8f4eb;
+    border-radius: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+  }
+
+  #header h1 {
+    font-family: "Abril Fatface", sans-serif;
+    margin: 0;
+  }
+  #description-intro {
+    position: absolute;
+    top: 80%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    background-color: #095a5d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1rem;
+    box-shadow: 8px 8px 13px rgba(20, 35, 52, 0.67);
+    z-index: 2;
+  }
+
+  #description-intro p {
+    margin: 0;
+  }
+
+
+  img #intro-image {
+    width: 700px;
+    height: 700px;
+    align-items: bottom;
+    border-radius: 100%;
+    border: 10px solid #095a5d;
+    box-shadow: 30px 8px 20px rgba(109, 98, 49, 0.4);
+    clip-path: ellipse(100% 75% at center);
+  }
+}
+
+/*i can not load the responsive at home.js but other pages work:))))*/
+/*the reason why i do this kind of responsive bc i want laptop user when they wanna 
+change their browser's size, it wont be lag tho -khanh*/
+
+@media screen and (max-width: 1023px) { 
+  #home-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #header {
+    font-family: "Abril Fatface", sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    font-size: 2.5em;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #044b4d;
+    z-index: 2;
+    white-space: nowrap;
+    background-color: #f8f4eb;
+    border-radius: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+  }
+
+  #description-intro {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-size: -0.6em;
+    transform: translate(-50%, -50%);
+    background-color: #095a5d;
+    color: white;
+    white-space: nowrap;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1rem;
+    box-shadow: 8px 8px 13px rgba(20, 35, 52, 0.67);
+    z-index: 2;
+  }
+
+  #description-intro p {
+    margin: 0;
+  }
+
+
+  .image-wrapper {
+    display: none;
+  }
+
+
+}
+

@@ -1,0 +1,180 @@
+/* Overlay styling */
+.wallet-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  height: auto;
+}
+
+/* Popup container */
+.wallet-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 90%;
+  transform: translate(-50%, -50%);
+  background-color: #095a5d;
+  padding: 34px;
+  border-radius: 16px;
+  color: #fff;
+  width: 360px;
+  box-shadow: 10px 8px 16px rgba(109, 98, 49, 0.4);
+  z-index: 1000;
+}
+
+/* Header */
+.wallet-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.wallet-address {
+  color: #eeebeb;
+}
+
+/* Balance */
+.wallet-balance {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Balance info and portfolio link */
+.wallet-balance-info {
+  margin-bottom: 20px;
+}
+
+.wallet-balance-info span {
+  color: #f0eded;
+}
+
+.wallet-portfolio {
+  color: #c0e675;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Actions container */
+.actions-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.action-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #090909;
+  cursor: pointer;
+}
+
+.action-icon {
+  background-color: #d2d499;
+  padding: 12px;
+  border-radius: 5px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tabs */
+.wallet-tabs {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #f8f7f7;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 8px 0;
+  color: #f6f3f3;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: #c0f57f;
+  border-bottom: 2px solid #c0f57f;
+}
+
+/* Transaction */
+.transaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f4f1f1;
+}
+
+.transaction-left {
+  display: flex;
+  align-items: center;
+}
+
+.transaction-icon {
+  background-color: #d2d499;
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.confirmed {
+  color: #2ecc71;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.transaction-right {
+  text-align: right;
+}
+
+.transaction-amount {
+  color: #f4f2f2;
+}
+
+/* Popup buttons */
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Shared button styles */
+.popup-buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Confirm button */
+.confirm-button {
+  background-color: #cff78b;
+  color: #0e0d0d;
+}
+
+/* Cancel button */
+.cancel-button {
+  background-color: #ff4d4d;
+  color: #fff;
+}
