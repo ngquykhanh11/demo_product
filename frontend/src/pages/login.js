@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 
 export const Login = ({ onLogin }) => {
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState(""); 
   const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
@@ -96,7 +96,7 @@ const commonInputStyle = {
         password,
       });
 
-      if (res.data.message === "Login successful") {
+      if (res.data.message === "Login successful"  || res.data.message.includes("Account created")) {
         alert("Login success!");
         localStorage.setItem("currentUser", JSON.stringify({ username })); //i wanna let the username be saved tho
         navigate("/shop");

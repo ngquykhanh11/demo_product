@@ -122,7 +122,7 @@ const TransactionHistory = () => {
                 <img src={transaction.img} alt={transaction.name} className="transaction-img" />
                 <div>
                   <h4>{transaction.name}</h4>
-                  <p>{transaction.deducted} x {transaction.quantity} = <b>{parseFloat(transaction.deducted.match(/- ([\d.]+)/)?.[1] || 0) * (parseInt(transaction.quantity) || 1)} {transaction.currency || ""}</b></p>
+                  <p><b>    {parseFloat(transaction.deducted.match(/- ([\d.]+)/)?.[1] || 0)} {" "} {transaction.currency || ""}</b></p>
                   <p>Status: {transaction.status}</p>
                   <p style={{ fontSize: "0.95em", color: "#888" }}>
                     {new Date(transaction.timestamp).toLocaleString()}
